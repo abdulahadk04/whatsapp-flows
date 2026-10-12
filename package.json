@@ -1,0 +1,14 @@
+{
+  "name": "whatsapp-flows-backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "preview": "node dev/dev.mjs",
+    "journeys": "node dev/dev.mjs --journeys",
+    "mock-public": "node dev/public-mock.mjs"
+  },
+  "dependencies": {
+    "express": "^4.22.3"
+  }
+}
