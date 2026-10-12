@@ -725,7 +725,7 @@ app.post("/flow-endpoint", async (req, res) => {
   }
 });
 app.get("/",async(req,res) => {
-  returnres.status(200).send({message:"deployment on render worked !"})
+  return res.status(200).send({message:"deployment on render worked !"})
 });
 
 app.listen(Number(PORT), () => {
