@@ -657,6 +657,7 @@ app.get("/webhook", (req, res) => {
 
 // Chat events
 app.post("/webhook", async (req, res) => {
+  console.log("webhook", JSON.stringify(req.body, null, 2));
   if (!signatureOk(req)) return res.sendStatus(401);
   res.sendStatus(200); // answer Meta first, then do the work
   try {
