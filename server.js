@@ -724,6 +724,9 @@ app.post("/flow-endpoint", async (req, res) => {
     return replyScreen(stay(s, "The service is temporarily unavailable. Please try again."));
   }
 });
+app.get("/",async(req,res) => {
+  returnres.status(200).send({message:"deployment on render worked !"})
+});
 
 app.listen(Number(PORT), () => {
   console.log(`Listening on ${PORT}: /webhook and /flow-endpoint`);
